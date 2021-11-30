@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="estiloej1.css">
+</head>
+
+ <!-- Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto. -->
+
+<body>
+    <p>
+        <button onclick="alternar()"> Cambiar fondo a gris</button>
+        <button onclick="alternar2()"> Cambiar fondo a aquamarino</button>
+        <button onclick="alternar3()"> Cambiar fondo a verde</button>
+    </p>
+    
+    <script>
+        function alternar(){
+            var element = document.body;
+            element.classList.toggle("cambio1");
+        }
+
+        function alternar2(){
+            var element = document.body;
+            element.classList.toggle("cambio2");
+        }
+
+        function alternar3(){
+            var element = document.body;
+            element.classList.toggle("cambio3");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+button{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+.cambio1{
+    background-color: gray;
+}
+
+.cambio2{
+    background-color: aquamarine;
+}
+
+.cambio3{
+    background-color: green;
+}

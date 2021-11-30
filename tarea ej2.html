@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- Programar un contador de caracteres para un textarea. -->
+
+<body>
+        <p>
+        <textarea name="text" id="mensaje" maxlength="300" cols="30" rows="10"></textarea>
+        <div id="contador">0/300</div>
+
+        </p>
+        
+    </form>
+
+           
+</body>
+
+<script>
+    
+    const mensaje = document.getElementById('mensaje');
+    const contador = document.getElementById('contador');
+
+    mensaje.addEventListener('input', function(e) {
+    const target = e.target;
+    const longitudMax = target.getAttribute('maxlength');
+    const longitudAct = target.value.length;
+    contador.innerHTML = `${longitudAct}/${longitudMax}`;
+});
+
+</script>
+</html>
